@@ -61,13 +61,6 @@ not modify evaluator logic, the schema, reason codes, frozen endpoints or
 scientific results. See `PUBLIC_RELEASE_PROVENANCE.md` and
 `PUBLIC_RELEASE_CHECKSUMS.sha256`.
 
-## AI-assisted development disclosure
-
-OpenAI Codex was used under author supervision for code-development support,
-workflow automation, testing, documentation, figure assembly and language
-editing. All scientific decisions, code, outputs and text used in the study
-were reviewed and verified by the authors, who take full responsibility.
-
 ## License and citation
 
 Code is released under the [BSD 3-Clause License](LICENSE). Project-generated

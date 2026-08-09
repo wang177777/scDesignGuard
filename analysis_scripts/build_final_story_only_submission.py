@@ -632,9 +632,6 @@ CODE_AVAILABILITY = "The evaluated scDesignGuard v0.1.0 software, exact analysis
 ETHICS = "This study exclusively reanalysed publicly available, de-identified datasets and involved no new participant recruitment, intervention or collection of identifiable private information. Under applicable institutional policies, this secondary analysis did not require additional ethics committee approval or informed consent. Ethics approvals and informed-consent procedures for the original studies are described in the source publications."
 AUTHOR_CONTRIBUTIONS = "Guoyong Wang, Kaijun Zhang, Jiyue Jiang, Yu Li and Xiaonan Yang conceived the study. Kaijun Zhang, Jiyue Jiang and Yu Li developed the methodology. Jiyue Jiang and Yu Li developed the software, curated the data and performed the formal analysis. Guoyong Wang, Weixin Wang, Hui Bi, Haojun Liang, Zuoliang Qi and Ying Huang contributed to clinical and biological interpretation. Guoyong Wang, Kaijun Zhang, Jiyue Jiang and Yu Li drafted the manuscript. All authors reviewed, edited and approved the final manuscript. Guoyong Wang and Xiaonan Yang supervised the study. Guoyong Wang, Kaijun Zhang, Ying Huang, Yu Li and Xiaonan Yang contributed equally to this work."
 FUNDING = "This work was supported by the Special Program for Clinical and Translational Medical Research of the Chinese Academy of Medical Sciences (2025-12M-C&T-B-067), the National Clinical Key Specialty Construction Project (23003), the Plastic Medicine Research Fund of the Chinese Academy of Medical Sciences (2024-ZX-1-01), the Special Research Fund for Plastic Surgery Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College (YSZ2024CG007), and the Beijing Natural Science Foundation (L256048)."
-AI_DISCLOSURE = "OpenAI Codex was used under author supervision for code development, data-processing automation, methodological option appraisal, testing, audit documentation, figure assembly and manuscript drafting and editing. It was not assigned authorship or reviewer status and did not replace human scientific judgement. All outputs used in this study were source-checked, tested and/or independently recomputed, and the authors take full responsibility for the work."
-
-
 def set_cell_shading(cell, fill: str) -> None:
     tc_pr = cell._tc.get_or_add_tcPr(); shd = OxmlElement("w:shd"); shd.set(qn("w:fill"), fill); tc_pr.append(shd)
 
@@ -700,7 +697,6 @@ def build_manuscript(refs: list[str]) -> Path:
     add_heading(doc, "Ethics statement"); add_rich_paragraph(doc, ETHICS)
     add_heading(doc, "Author contributions"); add_rich_paragraph(doc, AUTHOR_CONTRIBUTIONS)
     add_heading(doc, "Funding"); add_rich_paragraph(doc, FUNDING)
-    add_heading(doc, "Use of generative AI and AI-assisted technologies"); add_rich_paragraph(doc, AI_DISCLOSURE)
     add_heading(doc, "Competing interests"); add_rich_paragraph(doc, "The authors declare no competing interests.")
     add_heading(doc, "References")
     for ref in refs: add_rich_paragraph(doc, ref)
