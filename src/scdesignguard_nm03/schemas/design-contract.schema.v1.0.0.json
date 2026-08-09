@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scdesignguard.invalid/schemas/design-contract.schema.v1.0.0.json",
+  "title": "scDesignGuard NM03 Design Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "identity", "governance", "design", "count_source", "evidence", "robustness", "uncertainty", "claims"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "task_id": {"type": "string", "minLength": 1},
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["binding_status", "dataset_id", "version", "sha256"],
+      "properties": {
+        "binding_status": {"enum": ["EXACT", "UNBOUND"]},
+        "dataset_id": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "allOf": [{"if": {"properties": {"binding_status": {"const": "EXACT"}}}, "then": {"properties": {"dataset_id": {"minLength": 1}, "version": {"minLength": 1}, "sha256": {"pattern": "^[0-9a-f]{64}$"}}}}]
+    },
+    "governance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["license_status", "role_leakage"],
+      "properties": {
+        "license_status": {"enum": ["RESOLVED", "UNRESOLVED"]},
+        "role_leakage": {"type": "boolean"}
+      }
+    },
+    "design": {
+      "type": "object", "additionalProperties": false,
+      "required": ["biological_unit", "repeated_samples_as_donors", "donor_condition_conflict", "complete_confounding", "matrix", "contrast"],
+      "properties": {
+        "biological_unit": {"type": "string"},
+        "repeated_samples_as_donors": {"type": "boolean"},
+        "donor_condition_conflict": {"type": "boolean"},
+        "complete_confounding": {"type": "boolean"},
+        "matrix": {"type": "array", "minItems": 1, "items": {"type": "array", "minItems": 1, "items": {"type": "number"}}},
+        "contrast": {"type": "array", "minItems": 1, "items": {"type": "number"}}
+      }
+    },
+    "count_source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["valid", "integer", "nonnegative", "raw_library_sum_positive"],
+      "properties": {
+        "valid": {"type": "boolean"}, "integer": {"type": "boolean"},
+        "nonnegative": {"type": "boolean"}, "raw_library_sum_positive": {"type": "boolean"}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_support_sufficient", "independence_sufficient", "reference_present", "model_estimable"],
+      "properties": {
+        "target_support_sufficient": {"type": "boolean"}, "independence_sufficient": {"type": "boolean"},
+        "reference_present": {"type": "boolean"}, "model_estimable": {"type": "boolean"}
+      }
+    },
+    "robustness": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lodo_stable", "direction_stable", "filtering_stable", "annotation_stable", "confounding_stable"],
+      "properties": {
+        "lodo_stable": {"type": "boolean"}, "direction_stable": {"type": "boolean"},
+        "filtering_stable": {"type": "boolean"}, "annotation_stable": {"type": "boolean"},
+        "confounding_stable": {"type": "boolean"}
+      }
+    },
+    "uncertainty": {
+      "type": "object", "additionalProperties": false,
+      "required": ["clustered_uncertainty_resolved", "coverage_pass"],
+      "properties": {"clustered_uncertainty_resolved": {"type": "boolean"}, "coverage_pass": {"type": "boolean"}}
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["claim_id", "mapped_to_passed_gate"],
+        "properties": {"claim_id": {"type": "string", "minLength": 1}, "mapped_to_passed_gate": {"type": "boolean"}}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["relative_path", "sha256"],
+        "properties": {"relative_path": {"type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[A-Za-z0-9._/-]+$"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+      }
+    }
+  }
+}

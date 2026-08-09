@@ -1,0 +1,22 @@
+reason_code,terminal_state,definition
+GOV.IDENTITY.UNBOUND,BLOCK,Immutable identity/version/hash is not exactly bound.
+GOV.LICENSE.UNRESOLVED,BLOCK,Use rights or redistribution terms are unresolved.
+GOV.ROLE.LEAKAGE,BLOCK,Outcome access or role assignment occurred before freeze.
+GOV.CLAIM.UNMAPPED,BLOCK,A proposed release claim is not mapped to a passed endpoint and Gate.
+DESIGN.DONOR.INVALID,BLOCK,Donor is not the inference unit or repeated samples are treated as donors.
+DESIGN.CONDITION.CONFLICT,BLOCK,A donor maps to conflicting frozen conditions.
+DESIGN.CONFOUNDING.COMPLETE,BLOCK,The estimand is inseparable from complete technical confounding.
+COUNT.SOURCE.INVALID,BLOCK,The frozen count representation is contract-invalid.
+EVIDENCE.TARGET_SUPPORT.INSUFFICIENT,NON_EVALUABLE,Prespecified donor-target support is insufficient.
+EVIDENCE.ESTIMABILITY.INSUFFICIENT,NON_EVALUABLE,The frozen contrast or endpoint is not estimable.
+EVIDENCE.INDEPENDENCE.INSUFFICIENT,NON_EVALUABLE,Required independent evidence is unavailable or overlaps.
+EVIDENCE.REFERENCE.MISSING,NON_EVALUABLE,A required reference measurement is absent.
+EVIDENCE.MODEL.NONESTIMABLE,NON_EVALUABLE,The frozen statistical model cannot be estimated without amendment.
+ROBUSTNESS.LODO.FRAGILE,ABSTAIN,Prespecified leave-one-donor-out robustness fails.
+ROBUSTNESS.DIRECTION.UNSTABLE,ABSTAIN,Direction is unstable under the frozen robustness profile.
+ROBUSTNESS.FILTERING.FRAGILE,ABSTAIN,Eligibility/filtering is unstable under prespecified perturbation.
+ROBUSTNESS.ANNOTATION.SENSITIVE,ABSTAIN,Conclusion is sensitive to prespecified annotation perturbation.
+ROBUSTNESS.CONFOUNDING.SENSITIVE,ABSTAIN,Conclusion is sensitive to partial confounding adjustment.
+UNCERTAINTY.CLUSTERING.UNRESOLVED,ABSTAIN,Study/donor clustered uncertainty cannot be resolved.
+UNCERTAINTY.COVERAGE.BELOW_THRESHOLD,ABSTAIN,Prespecified uncertainty coverage rule fails.
+OUTPUT.SAFE_TO_PROCEED,PROCEED,All higher-precedence reasons are absent.

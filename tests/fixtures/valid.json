@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "FIXTURE-VALID",
+  "identity": {"binding_status": "EXACT", "dataset_id": "fixture-dataset", "version": "1", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+  "governance": {"license_status": "RESOLVED", "role_leakage": false},
+  "design": {"biological_unit": "donor", "repeated_samples_as_donors": false, "donor_condition_conflict": false, "complete_confounding": false, "matrix": [[1, 0], [1, 1], [1, 0], [1, 1]], "contrast": [0, 1]},
+  "count_source": {"valid": true, "integer": true, "nonnegative": true, "raw_library_sum_positive": true},
+  "evidence": {"target_support_sufficient": true, "independence_sufficient": true, "reference_present": true, "model_estimable": true},
+  "robustness": {"lodo_stable": true, "direction_stable": true, "filtering_stable": true, "annotation_stable": true, "confounding_stable": true},
+  "uncertainty": {"clustered_uncertainty_resolved": true, "coverage_pass": true},
+  "claims": [{"claim_id": "fixture-claim", "mapped_to_passed_gate": true}],
+  "sources": [{"relative_path": "evidence/source.json", "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}]
+}

@@ -1,0 +1,327 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-06T00:00:00Z",
+    "creators": [
+      "Tool: scripts/nm03/build_freeze_evidence.py"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://scdesignguard.invalid/spdx/nm03-0.1.0-candidate",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-0001",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac7d1cc6ac39e411e06f0d030d7d2ae9d3d85d146976fead262405a0158f6d9e"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/__init__.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0002",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "792329d0c1a236c99191dec4811a1a7c09f71aebefa0fe267164bb22f71ef57e"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/blocker.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0003",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75348ef2acd251398bb65f2ff4a0211c13110a3ae7fbed21c9f915a83efe5e9d"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/catalog.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0004",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "faad9e13ac87c8a3d8e17301bc959dacd45ad5993cbd0ffa73f03339811b51ff"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/cli.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0005",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ef51c9024ff69d75722e9b8e380a6bc60db5894530edf747b85a43d74349bf42"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/compiler.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0006",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "126700c4152968ef8a8d9c482573a4699cd6e74d0c3b89e0ec7193dba68fa2d2"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/engine.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0007",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b2ad4a31877621c602606d440f9d5b3d806db996584d3846df60caffa25896ea"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/privacy.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0008",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "85377edb69d45a8bb88315465181eecf32a6859758a7005fc87760d94ea4b920"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/repair.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0009",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8a120855f70019bcc5e008828652fae6956c4d78849818e36e6b15841003bbe6"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/report.py"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0010",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8755803b1a0224f5d41ab283a9ea3fe607228f40f4fec8d51c514d9b68294616"
+        }
+      ],
+      "fileName": "src/scdesignguard_nm03/schemas/design-contract.schema.v1.0.0.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0011",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cb7a7980add8fd808bfa1fcdd85cc44e52deba71d5b8669a2f53770fbd9221ab"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/API_SCHEMA_VERSION_FREEZE_PROPOSAL.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0012",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5dc22be17fda0f0e97be074012e96ab464f16f7d9209e293b4c0f141762ae939"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/LICENSE_PROPOSAL.txt"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0013",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "10b0f9b62fc8437bc24e4634d58bed9ddd19023f8b0d9c9e94b3b5600bf029dd"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/PUBLIC_PRIVATE_RELEASE_FILTER_CONTRACT.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0014",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f010a55935104d29cc9b1b610d24081ac49ca38a3e149bf9c409137641243a9"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/README.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0015",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "24c7d31aa1b7ed7e8ae1c654e20cff51db2537fce44e8e960d6b00173eeca8a9"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/RELEASE_BOUNDARY.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0016",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "28a3e8a4fce0f682c0636fac0aecdc9defd2fa887725486a45679f07d4e21efa"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/RUNTIME_MEMORY_BUDGET_PROPOSAL.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0017",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0aef7bc96495ad71139aeca610bc79307f8d7600c0de2bc11673feff82f56769"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/SECURITY_MODEL.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0018",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f560fcc9302fb5436a40b26df4c5fc521880511b95a09abc3992566b561b7512"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/TUTORIAL.md"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0019",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8755803b1a0224f5d41ab283a9ea3fe607228f40f4fec8d51c514d9b68294616"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/design-contract.schema.v1.0.0.json"
+    },
+    {
+      "SPDXID": "SPDXRef-File-0020",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "afb6cdf276241827ffc5bb8a7d44a7345bb382e43977cfcc75ecddd503f17438"
+        }
+      ],
+      "fileName": "protocol/nm03/software_freeze_candidate/oci/Containerfile"
+    }
+  ],
+  "name": "scdesignguard-nm03-0.1.0-candidate",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "BSD-3-Clause",
+      "name": "scdesignguard-nm03",
+      "versionInfo": "0.1.0"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-File-0001",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0002",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0003",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0004",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0005",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0006",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0007",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0008",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0009",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0010",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0011",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0012",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0013",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0014",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0015",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0016",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0017",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0018",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0019",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0020",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

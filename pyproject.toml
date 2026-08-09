@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scdesignguard-nm03"
+version = "0.1.0"
+description = "Fail-closed design-contract compiler and stage-aware validity gate"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "BSD-3-Clause"}
+authors = [
+  {name = "Guoyong Wang"},
+  {name = "Kaijun Zhang"},
+  {name = "Jiyue Jiang"},
+  {name = "Yu Li"},
+  {name = "Xiaonan Yang", email = "yxnan@aliyun.com"},
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/wang177777/scDesignGuard"
+Repository = "https://github.com/wang177777/scDesignGuard"
+Issues = "https://github.com/wang177777/scDesignGuard/issues"
+
+[project.scripts]
+scdesignguard = "scdesignguard_nm03.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scdesignguard_nm03 = ["schemas/*.json"]

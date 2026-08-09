@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use scDesignGuard, please cite this software and the associated manuscript."
+title: "scDesignGuard"
+type: software
+version: 0.1.0
+date-released: 2026-08-10
+repository-code: "https://github.com/wang177777/scDesignGuard"
+license: BSD-3-Clause
+authors:
+  - family-names: Wang
+    given-names: Guoyong
+  - family-names: Zhang
+    given-names: Kaijun
+  - family-names: Jiang
+    given-names: Jiyue
+  - family-names: Wang
+    given-names: Weixin
+  - family-names: Bi
+    given-names: Hui
+  - family-names: Liang
+    given-names: Haojun
+  - family-names: Qi
+    given-names: Zuoliang
+  - family-names: Huang
+    given-names: Ying
+  - family-names: Li
+    given-names: Yu
+  - family-names: Yang
+    given-names: Xiaonan
+    email: yxnan@aliyun.com
+
