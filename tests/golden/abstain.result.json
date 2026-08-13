@@ -1,0 +1,33 @@
+{
+  "abstention_calibration": {
+    "policy_id": "NM00_V1_1_1_PRECEDENCE_CALIBRATION",
+    "probability_interpretation": "NONE_POLICY_SCORE_ONLY",
+    "score": 0.5
+  },
+  "biological_truth_certified": false,
+  "claim_limit": "Report evaluability and withholding reason; withhold conclusion.",
+  "contract_sha256": "77bf4addae6fa8385f01e6fda8c28ae35e93da9a7ccf72fb977d4db2fd4f826c",
+  "estimability_proof": {
+    "augmented_with_contrast_rank": 2,
+    "contrast_dimension": 2,
+    "design_rank": 2,
+    "estimable": true,
+    "floating_tolerance_used": false,
+    "method": "EXACT_RATIONAL_ROW_SPACE_RANK"
+  },
+  "reason_codes": [
+    "ROBUSTNESS.LODO.FRAGILE"
+  ],
+  "reason_ledger": [
+    {
+      "definition": "Prespecified leave-one-donor-out robustness fails.",
+      "reason_code": "ROBUSTNESS.LODO.FRAGILE",
+      "terminal_state": "ABSTAIN"
+    }
+  ],
+  "scientific_analysis_executed": false,
+  "separate_authorization_required": true,
+  "state_precedence": 3,
+  "task_id": "FIXTURE-ABSTAIN",
+  "terminal_state": "ABSTAIN"
+}

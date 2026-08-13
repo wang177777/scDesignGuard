@@ -12,8 +12,9 @@
 - Evaluated OCI archive SHA-256:
   `ad675089b934e6d96c1bfd83b9deb4fc6c9ac8dbda345ce9e08a9d7d9b21c85d`
 
-`ARCHIVAL_EVALUATOR_IDENTITY_MANIFEST.csv` and `.json` preserve the exact
-identity receipt. `PUBLIC_RELEASE_CHECKSUMS.sha256` covers this public tree.
+`LEGACY_V0_1_0_EVALUATOR_IDENTITY_MANIFEST.csv` and `.json` preserve the exact
+v0.1.0 identity receipt. `PUBLIC_RELEASE_CHECKSUMS.sha256` covers the current
+public tree.
 
 ## Post-evaluation public packaging
 
@@ -26,15 +27,20 @@ The following changes are packaging or documentation only:
 - publication artifacts and a public numerical-reconciliation script;
 - continuous-integration configuration.
 
-These changes do not alter evaluator modules in `src/scdesignguard_nm03/`, the
-JSON Schema, the reason-code registry, the exact evaluated wheel or the frozen
-scientific results.
+Evaluator modules in `src/scdesignguard_nm03/`, the JSON Schema, the
+reason-code registry, the exact evaluated wheel and the frozen scientific
+results remain unchanged.
+
+## v0.1.1 reproducibility packaging
+
+Release v0.1.1 adds archive-relative PROCEED, BLOCK, NON_EVALUABLE and ABSTAIN
+fixtures, checksum-bound golden outputs, a 17-method test suite, clean-wheel
+fixture checks and current manuscript artifacts. The reviewer archive and its
+SHA-256 sidecar are attached to the GitHub release.
 
 ## Excluded from public release
 
-The public repository intentionally excludes internal Git history, named
-human-review/signature files, private authorization records, credentials,
-machine-local paths, controlled data and third-party raw objects whose
-redistribution rights are unresolved. This exclusion is a privacy and
-licensing boundary, not a change to scientific denominators or results.
-
+Internal Git history, named human-review files, private authorization records,
+credentials, machine-local paths, controlled data and third-party raw objects
+remain in their governed source locations. This implements the project privacy
+and licensing policy; scientific denominators and results remain as reported.

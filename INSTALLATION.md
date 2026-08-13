@@ -2,8 +2,8 @@
 
 ## Source checkout
 
-Requirements: CPython 3.9 or later. The evaluated release was independently
-reproduced with CPython 3.12.12.
+Requirements: CPython 3.9 or later. The v0.1.1 archive was verified with
+CPython 3.12.12.
 
 ```bash
 git clone https://github.com/wang177777/scDesignGuard.git
@@ -17,6 +17,9 @@ python -m unittest discover -s tests -v
 ```
 
 Expected version: `0.1.0`.
+
+Expected test result: 17 test methods, zero failures, zero errors and zero
+skips. The terminal-state fixture method contains four named subtests.
 
 ## Exact evaluated wheel
 
@@ -54,6 +57,4 @@ podman run --rm --network=none --read-only --cap-drop=all \
   localhost/scdesignguard-nm03:0.1.0 verify /inputs/contract.json
 ```
 
-Do not mount credentials, identifiable participant information, controlled
-data or uncontrolled host directories into the container.
-
+Use de-identified, authorized inputs and a read-only mount for routine runs.

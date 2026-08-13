@@ -203,7 +203,7 @@ def reconcile(workbook: Path) -> dict:
                 }
                 for name, (numerator, denominator) in observed.items()
             },
-            "claim_boundary": "state concordance with frozen source-bound human consensus; not independently labelled external accuracy",
+            "endpoint_scope": "state concordance with frozen source-bound human consensus",
         },
         "e2e": {"denominator": 4, "full_passes": full_passes, "early_stops": early_stops},
         "known_invalid": {"denominator": 9, "safe_nonproceed": 9, "exact_reason_match": 9},

@@ -1,16 +1,17 @@
 # scDesignGuard
 
-scDesignGuard is a fail-closed, stage-aware framework for deciding whether a
-single-cell analysis is scientifically authorized by its source identity,
-donor design, target support and model estimability. The software returns one
-of four terminal states (`PROCEED`, `ABSTAIN`, `BLOCK` or `NON_EVALUABLE`)
-together with machine-readable reason codes. A `PROCEED` state does not itself
-authorize downstream scientific execution.
+scDesignGuard is a stage-aware framework for deciding whether source identity,
+donor design, target support and model estimability authorize a proposed
+single-cell analysis. Its deterministic evaluator validates a completed design
+contract and returns `PROCEED`, `ABSTAIN`, `BLOCK` or `NON_EVALUABLE` with
+machine-readable reason codes. Contract construction and downstream inference
+are handled by the surrounding workflow.
 
-This public repository contains the evaluated scDesignGuard NM03 v0.1.0
-software, schema, 21-code reason registry, synthetic test fixture, unit tests,
-software bill of materials, analysis scripts and the project-generated Source
-Data and figure outputs used for the accompanying manuscript.
+This public repository contains the evaluated NM03 v0.1.0 software and the
+v0.1.1 reproducibility packaging: schema, 21-code reason registry, four
+terminal-state fixtures with golden outputs, 17 test methods, software bill of
+materials, bounded recomputation helpers and the project-generated manuscript,
+Source Data and figures.
 
 ## Quick start
 
@@ -36,30 +37,33 @@ template; the same commands were executed locally before release.
   repair suggestions, privacy filter and report renderer.
 - `artifacts/`: evaluated wheel, JSON Schema and SBOM. The exact OCI archive
   is attached to the GitHub release because it is a binary release artifact.
-- `tests/`: synthetic fixture and 13 fail-closed/unit/integration tests.
-- `analysis_scripts/`: source-data, figure and independent recomputation code.
+- `tests/`: four terminal-state fixtures, golden outputs and 17
+  unit/integration test methods.
+- `analysis_scripts/`: aggregate Source Data verification and selected count
+  and design recomputation helpers.
 - `paper/`: final manuscript artifacts, Source Data and publication figures.
-- `ARCHIVAL_EVALUATOR_IDENTITY_MANIFEST.*`: hashes linking the evaluated
-  software to source commit `6d7d87b45c64c7f6f62ba818eb69b33c147d66e5`
-  and tree `f2be0de9ac1c0d6cb55274d209254cab5b0f3f68`.
+- `LEGACY_V0_1_0_EVALUATOR_IDENTITY_MANIFEST.*`: historical hashes linking
+  the evaluated software to source commit
+  `6d7d87b45c64c7f6f62ba818eb69b33c147d66e5` and tree
+  `f2be0de9ac1c0d6cb55274d209254cab5b0f3f68`.
 
 ## Data availability and redistribution boundary
 
-Third-party expression objects, repository payloads, participant-level
-metadata and human-review/signature records are not redistributed here.
 Official accession or collection identifiers and project-generated aggregate
-Source Data are provided in `paper/source_data/`. Obtain third-party inputs
-from the official repositories cited in the manuscript and comply with their
-terms. The absence of a third-party object from this repository is not a
-scientific exclusion and does not change any frozen denominator or result.
+Source Data are provided in `paper/source_data/`. Third-party expression
+objects, repository payloads, participant-level metadata and human-review
+records remain with their official repositories or governed project stores.
+Frozen membership, denominators and results are recorded in the released
+Source Data.
 
-## Reproducibility boundary
+## Reproducibility
 
-The exact evaluated wheel is included and hash-bound. Public-release
-documentation and packaging metadata were added after evaluation; these do
-not modify evaluator logic, the schema, reason codes, frozen endpoints or
-scientific results. See `PUBLIC_RELEASE_PROVENANCE.md` and
-`PUBLIC_RELEASE_CHECKSUMS.sha256`.
+The exact evaluated wheel is included and hash-bound. Release v0.1.1 adds
+archive-relative fixtures, golden outputs, reproducibility receipts and current
+publication artifacts while retaining evaluator logic, schema, reason codes,
+wheel and OCI identity. See `PUBLIC_RELEASE_PROVENANCE.md`,
+`PUBLIC_RELEASE_CHECKSUMS.sha256` and the
+[v0.1.1 release](https://github.com/wang177777/scDesignGuard/releases/tag/v0.1.1).
 
 ## License and citation
 

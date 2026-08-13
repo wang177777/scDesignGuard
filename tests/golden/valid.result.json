@@ -1,0 +1,33 @@
+{
+  "abstention_calibration": {
+    "policy_id": "NM00_V1_1_1_PRECEDENCE_CALIBRATION",
+    "probability_interpretation": "NONE_POLICY_SCORE_ONLY",
+    "score": 0.0
+  },
+  "biological_truth_certified": false,
+  "claim_limit": "A separately authorized phase may begin; biological truth is not certified.",
+  "contract_sha256": "58cf351a4d06bd7351a4a74e689f243d2f357786b586286e587d5c1d4e40a157",
+  "estimability_proof": {
+    "augmented_with_contrast_rank": 2,
+    "contrast_dimension": 2,
+    "design_rank": 2,
+    "estimable": true,
+    "floating_tolerance_used": false,
+    "method": "EXACT_RATIONAL_ROW_SPACE_RANK"
+  },
+  "reason_codes": [
+    "OUTPUT.SAFE_TO_PROCEED"
+  ],
+  "reason_ledger": [
+    {
+      "definition": "All higher-precedence reasons are absent.",
+      "reason_code": "OUTPUT.SAFE_TO_PROCEED",
+      "terminal_state": "PROCEED"
+    }
+  ],
+  "scientific_analysis_executed": false,
+  "separate_authorization_required": true,
+  "state_precedence": 4,
+  "task_id": "FIXTURE-VALID",
+  "terminal_state": "PROCEED"
+}

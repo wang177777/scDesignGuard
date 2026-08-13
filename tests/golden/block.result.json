@@ -1,0 +1,33 @@
+{
+  "abstention_calibration": {
+    "policy_id": "NM00_V1_1_1_PRECEDENCE_CALIBRATION",
+    "probability_interpretation": "NONE_POLICY_SCORE_ONLY",
+    "score": 1.0
+  },
+  "biological_truth_certified": false,
+  "claim_limit": "Immutable audit reason only; no scientific or performance analysis.",
+  "contract_sha256": "7262907c329fecb3c27f40441b269f5e264ffbd43a83ac74a2fb54f9e63c7a8e",
+  "estimability_proof": {
+    "augmented_with_contrast_rank": 2,
+    "contrast_dimension": 2,
+    "design_rank": 2,
+    "estimable": true,
+    "floating_tolerance_used": false,
+    "method": "EXACT_RATIONAL_ROW_SPACE_RANK"
+  },
+  "reason_codes": [
+    "GOV.ROLE.LEAKAGE"
+  ],
+  "reason_ledger": [
+    {
+      "definition": "Outcome access or role assignment occurred before freeze.",
+      "reason_code": "GOV.ROLE.LEAKAGE",
+      "terminal_state": "BLOCK"
+    }
+  ],
+  "scientific_analysis_executed": false,
+  "separate_authorization_required": true,
+  "state_precedence": 1,
+  "task_id": "FIXTURE-BLOCK",
+  "terminal_state": "BLOCK"
+}

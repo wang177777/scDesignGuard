@@ -1,9 +1,8 @@
 # Publication artifacts
 
 This directory contains the manuscript submission candidate, Supplementary
-Information, Source Data and main/Extended Data figures current on 10 August
-2026. These are author-prepared, pre-publication artifacts and may differ from
-the version ultimately accepted by a journal.
+Information, Source Data and main/Extended Data figures current on 13 August
+2026. These are the author-prepared v0.1.1 submission artifacts.
 
 The project-generated figures and Source Data are licensed CC BY 4.0. The
 manuscript text is provided for transparency and peer-review reproducibility;
@@ -18,4 +17,3 @@ public aggregate-data artifact. Verify its frozen numerical claims with:
 python analysis_scripts/verify_public_source_data.py \
   paper/source_data/scDesignGuard_Nature_Methods_SOURCE_DATA.xlsx
 ```
-

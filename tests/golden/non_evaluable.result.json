@@ -1,0 +1,33 @@
+{
+  "abstention_calibration": {
+    "policy_id": "NM00_V1_1_1_PRECEDENCE_CALIBRATION",
+    "probability_interpretation": "NONE_POLICY_SCORE_ONLY",
+    "score": 0.75
+  },
+  "biological_truth_certified": false,
+  "claim_limit": "Report non-evaluability only; not negative model performance.",
+  "contract_sha256": "6d803a055d7f911b0b1c2f5eca764b53602c0937730de963be40c493b57fbe40",
+  "estimability_proof": {
+    "augmented_with_contrast_rank": 2,
+    "contrast_dimension": 2,
+    "design_rank": 2,
+    "estimable": true,
+    "floating_tolerance_used": false,
+    "method": "EXACT_RATIONAL_ROW_SPACE_RANK"
+  },
+  "reason_codes": [
+    "EVIDENCE.TARGET_SUPPORT.INSUFFICIENT"
+  ],
+  "reason_ledger": [
+    {
+      "definition": "Prespecified donor-target support is insufficient.",
+      "reason_code": "EVIDENCE.TARGET_SUPPORT.INSUFFICIENT",
+      "terminal_state": "NON_EVALUABLE"
+    }
+  ],
+  "scientific_analysis_executed": false,
+  "separate_authorization_required": true,
+  "state_precedence": 2,
+  "task_id": "FIXTURE-NON-EVALUABLE",
+  "terminal_state": "NON_EVALUABLE"
+}

@@ -24,6 +24,10 @@ def fixture():
     return json.loads((ROOT / "tests/fixtures/valid.json").read_text())
 
 
+def named_fixture(name):
+    return json.loads((ROOT / f"tests/fixtures/{name}.json").read_text())
+
+
 class CompilerTests(unittest.TestCase):
     def test_deterministic_compile(self):
         one = compile_contract(fixture())
@@ -51,6 +55,20 @@ class CompilerTests(unittest.TestCase):
 
 
 class StateTests(unittest.TestCase):
+    def test_all_archived_terminal_state_fixtures(self):
+        expected = {
+            "valid": ("PROCEED", "OUTPUT.SAFE_TO_PROCEED"),
+            "block": ("BLOCK", "GOV.ROLE.LEAKAGE"),
+            "non_evaluable": ("NON_EVALUABLE", "EVIDENCE.TARGET_SUPPORT.INSUFFICIENT"),
+            "abstain": ("ABSTAIN", "ROBUSTNESS.LODO.FRAGILE"),
+        }
+        for name, (state, primary_reason) in expected.items():
+            with self.subTest(fixture=name):
+                result = evaluate_contract(named_fixture(name))
+                self.assertEqual(result["terminal_state"], state)
+                self.assertEqual(result["reason_codes"][0], primary_reason)
+                golden = json.loads((ROOT / f"tests/golden/{name}.result.json").read_text())
+                self.assertEqual(result, golden)
     def test_proceed_and_authorization_boundary(self):
         result = evaluate_contract(fixture())
         self.assertEqual(result["terminal_state"], "PROCEED")

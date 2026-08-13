@@ -15,6 +15,9 @@ python -m pip install .
 python -m unittest discover -s tests -v
 ```
 
+The suite runs 17 test methods. Four named fixture subtests verify PROCEED,
+BLOCK, NON_EVALUABLE and ABSTAIN against checksum-bound golden outputs.
+
 ## 3. Verify frozen numerical claims
 
 The project-generated Source Data workbook is
@@ -27,8 +30,7 @@ python analysis_scripts/verify_public_source_data.py \
 
 The script reports the overlap-excluded 15-family benchmark denominators and
 Wilson intervals, four held-out end-to-end outcomes, nine known-invalid
-challenges and key beta-cell application totals. It does not access expression
-matrices or refit biological models.
+challenges and key beta-cell application totals from the released workbook.
 
 ## 4. Third-party inputs
 
@@ -43,10 +45,13 @@ replacement or threshold relaxation is permitted.
 - Core evaluator: Python 3.9+; evaluated in Python 3.12.12.
 - Independent count recomputation: ISO C source in `analysis_scripts/`.
 - Independent design-matrix recomputation: R script in `analysis_scripts/`.
-- Figure/manuscript build: Python source retained in `analysis_scripts/`.
-- Source Data build: Node.js source retained in `analysis_scripts/`.
+- Aggregate Source Data verification: Python script in `analysis_scripts/`.
 
-The accompanying SBOM and archival identity manifest record exact evaluated
-software identity. The OCI archive attached to release `v0.1.0` provides the
-evaluated container bytes.
+The release archive contains the evaluator packaging and bounded verification
+materials. Study-specific metadata construction and biological model fitting
+use the methods and source records documented in the manuscript and Source
+Data.
 
+The accompanying SBOM and legacy v0.1.0 identity manifest record exact
+evaluated software identity. The OCI archive attached to release `v0.1.0`
+provides the evaluated container bytes.
